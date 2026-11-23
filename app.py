@@ -5,7 +5,7 @@ from sklearn.datasets import load_breast_cancer
 from src.benchmark import benchmark_classifiers
 
 st.set_page_config(page_title="Sector-Based ML Lab", page_icon="🧪", layout="wide")
-st.markdown('<style>
+st.markdown("""<style>
 .stApp{background:linear-gradient(180deg,#f5f8fc 0%,#fff 40%);color:#10243a}
 .block-container{max-width:1320px;padding-top:1rem;padding-bottom:3rem}
 [data-testid="stSidebar"]{background:#f0f4f9;border-right:1px solid #e1e8f0}
@@ -23,7 +23,7 @@ button[kind="primary"]{background:linear-gradient(90deg,#147e78,#19a89b);border:
 .hero p{color:#d1e5ed;margin:0;font-size:1rem}
 .hero .eyebrow{font-size:.74rem;font-weight:800;letter-spacing:.14em;color:#83ded3;margin-bottom:8px}
 .section-label{color:#718399;font-size:.76rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
-</style>', unsafe_allow_html=True)
+</style>""", unsafe_allow_html=True)
 st.markdown("""
 <style>
 .block-container {padding-top:1.6rem; padding-bottom:2.5rem;}
