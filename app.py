@@ -40,6 +40,10 @@ def load_demo():
 
 X,y,target_names = load_demo()
 st.warning("This demo uses the public scikit-learn breast cancer dataset for education only. It is not a medical diagnostic tool.")
+st.markdown("### Experiment workflow")
+st.markdown("**1 · Baseline** establish a simple benchmark  ·  **2 · Validate** use stratified folds  ·  **3 · Compare** review multiple metrics  ·  **4 · Select** weigh performance against operating context")
+with st.expander("Metric guide"):
+    st.markdown("- **Macro F1:** equal weight to each class\n- **Accuracy:** overall correct predictions\n- **Precision / recall:** trade-off between false positives and missed positives\n- **ROC AUC:** discrimination across thresholds\n- **Fold standard deviation:** variability across validation folds")
 st.subheader("Experiment setup")
 c1,c2,c3 = st.columns(3)
 c1.metric("Samples", f"{len(X):,}")
